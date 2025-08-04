@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Tashadur Rahman",
   tagline: "Full Stack Developer",
   description: " Final Year Computer Science student at VIT Chennai with a strong background in developing reliable systems and dealing with large volumes of data.",
-  photo: "src/utils/profile_pic.jpg",
+  photo: "/images/profile_pic.jpg",
   resumeUrl: "https://drive.google.com/file/d/1vVtg8-GUH3Vv8WNv3hybrfHmweczDDF4/view?usp=sharing",
   email: "tashadurrahman1924@email.com",
   location: "San Francisco, CA"

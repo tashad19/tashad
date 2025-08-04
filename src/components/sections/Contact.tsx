@@ -28,11 +28,11 @@ const Contact: React.FC = () => {
     switch (iconName) {
       case 'github': return <Github className="h-5 w-5" />;
       case 'linkedin': return <Linkedin className="h-5 w-5" />;
-      case 'twitter': return <img src="src\utils\x.svg" alt="X" className="h-4 w-4" />;
-      case 'leetcode': return <img src="src\utils\leetcode.webp" alt="LeetCode" className="h-5 w-5" />;
-      case 'hackerrank': return <img src="src\utils\hackerrank.svg" alt="HackerRank" className="h-5 w-5" />;
-      case 'codechef': return <img src="src\utils\codechef.svg" alt="CodeChef" className="h-5 w-5" />;
-      case 'codeforces': return <img src="src\utils\codeforces.webp" alt="Codeforces" className="h-5 w-5" />;
+      case 'twitter': return <img src="public\images\x.svg" alt="X" className="h-4 w-4" />;
+      case 'leetcode': return <img src="public\images\leetcode.webp" alt="LeetCode" className="h-5 w-5" />;
+      case 'hackerrank': return <img src="public\images\hackerrank.svg" alt="HackerRank" className="h-5 w-5" />;
+      case 'codechef': return <img src="public\images\codechef.svg" alt="CodeChef" className="h-5 w-5" />;
+      case 'codeforces': return <img src="public\images\codeforces.webp" alt="Codeforces" className="h-5 w-5" />;
       default: return <Mail className="h-5 w-5" />;
     }
   };
