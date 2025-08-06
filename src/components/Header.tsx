@@ -43,7 +43,7 @@ const Header: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold text-black dark:text-white"
           >
-            Portfolio
+            <img src="images/favicon.png" alt="Logo" className="h-10 w-10" />
           </motion.div>
 
           {/* Desktop Navigation */}

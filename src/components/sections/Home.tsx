@@ -15,7 +15,7 @@ const Home: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-6">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 lg:gap-16 gap-12 items-center">
           {/* Photo Section */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}

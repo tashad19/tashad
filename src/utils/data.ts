@@ -9,11 +9,24 @@ export const personalInfo = {
 };
 
 export const achievements = [
-  "Won first place at the University Hackathon 2023 for developing an AI-powered learning assistant that helps students with personalized study plans",
-  "Selected as one of the top 50 finalists in Google Code-in competition for outstanding open source contributions to various projects",
-  "Maintained a 3.9 GPA and received Dean's List recognition for academic excellence throughout my computer science program",
-  "Led a team of 5 developers in creating a mobile app that gained 1000+ downloads within the first month of launch",
-  "Completed advanced certifications in React, Node.js, and AWS cloud services with distinction grades"
+  {
+    "title": "Winner - AIQoD Hackathon 2025",
+    "organization": "VIT Chennai",
+    "date": "March 2025",
+    "description": "Developed an AI-powered system for automatic stamp and signature extraction using a two-step approach with YOLOv8 for detection and segmentation, and U-Net for background removal. Implemented synthetic data augmentation techniques to generate training masks, achieving 91.8% accuracy for real-world document processing."
+  },
+  {
+    "title": "Winner - CodeVolt’25",
+    "organization": "Zoho & Raptee.HV — VIT Chennai",
+    "date": "March 2025",
+    "description": "Developed an innovative enhancement for Raptee.HV company’s map system, leveraging user-driven EV-motorbike GPS data to update unexplored areas in real-time. Designed a scalable, automated pipeline for road detection and verification, improving navigation accuracy."
+  },
+  {
+    "title": "Finalist - Gujarat Robofest 4.0",
+    "organization": "GUJCOST, Ahmedabad",
+    "date": "December 2024",
+    "description": "Proposed and devised a hexapod robot as a security solution at the Robofest competition in Ahmedabad. The team was in the Top 30 among 500+ teams and won ₹2.5 lakh in prize money."
+  }
 ];
 
 export const education = [
@@ -40,21 +53,35 @@ export const education = [
   }
 ];
 
-export const technicalSkills = [
-  { name: "JavaScript", category: "language" },
-  { name: "TypeScript", category: "language" },
-  { name: "Python", category: "language" },
-  { name: "Java", category: "language" },
-  { name: "React", category: "framework" },
-  { name: "Node.js", category: "framework" },
-  { name: "Express", category: "framework" },
-  { name: "Next.js", category: "framework" },
-  { name: "MongoDB", category: "database" },
-  { name: "PostgreSQL", category: "database" },
-  { name: "Git", category: "tool" },
-  { name: "Docker", category: "tool" },
-  { name: "AWS", category: "tool" },
-  { name: "Figma", category: "tool" }
+export const programmingLanguages = [
+  { name: "JavaScript", icon: "JS" },
+  { name: "Python", icon: "language" },
+  { name: "C++", icon: "language" },
+  { name: "C#", icon: "framework" },
+  { name: "Java", icon: "framework" },
+  { name: "SQL", icon: "framework" },
+  { name: "HTML", icon: "framework" },
+  { name: "CSS", icon: "database" }
+];
+
+export const tools = [
+  { name: "React.js", icon: "JS" },
+  { name: "Express.js", icon: "language" },
+  { name: "Node.js", icon: "language" },
+  { name: "Tailwind CSS", icon: "framework" },
+  { name: "Flask", icon: "framework" },
+  { name: "MongoDB", icon: "framework" },
+  { name: "Firebase", icon: "framework" },
+  { name: "Git", icon: "database" }
+];
+
+export const ml = [
+  { name: "NumPy", icon: "JS" },
+  { name: "Pandas", icon: "language" },
+  { name: "OpenCV", icon: "language" },
+  { name: "YOLO", icon: "framework" },
+  { name: "Matplotlib", icon: "framework" },
+  { name: "Scikit-learn", icon: "framework" },
 ];
 
 export const softSkills = [

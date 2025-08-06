@@ -28,7 +28,7 @@ const Achievements: React.FC = () => {
           className="max-w-4xl mx-auto"
         >
           <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-8 shadow-lg">
-            <ul className="space-y-4">
+            <ul className="space-y-8">
               {achievements.map((achievement, index) => (
                 <motion.li
                   key={index}
@@ -36,10 +36,17 @@ const Achievements: React.FC = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="flex items-start text-gray-700 dark:text-gray-300 leading-relaxed"
+                  className="text-left"
                 >
-                  <span className="w-2 h-2 bg-black dark:bg-white rounded-full mt-2 mr-4 flex-shrink-0"></span>
-                  <span className="text-lg">{achievement}</span>
+                  <h3 className="text-xl font-semibold text-black dark:text-white mb-1">
+                    {achievement.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                    {achievement.organization} • {achievement.date}
+                  </p>
+                  <p className="text-md text-gray-700 dark:text-gray-300 leading-relaxed">
+                    {achievement.description}
+                  </p>
                 </motion.li>
               ))}
             </ul>
