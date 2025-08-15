@@ -22,7 +22,7 @@ const Experience: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="space-y-8">
+        <div className="space-y-8 relative">
           {experiences.map((experience, index) => (
             <motion.div
               key={experience.id}

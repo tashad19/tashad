@@ -22,7 +22,7 @@ const Education: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="space-y-8">
+        <div className="space-y-8 relative ">
           {education.map((edu, index) => (
             <motion.div
               key={index}
@@ -31,17 +31,19 @@ const Education: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
+              <div className="absolute left-1/2 top-0 -translate-x-1/2 w-1 h-full bg-gray-300 dark:bg-gray-600 transform-none w-1 -z-10" />
+
               <Card className="p-8">
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-black dark:bg-white rounded-full flex items-center justify-center">
-                      <GraduationCap className="h-8 w-8 text-white dark:text-black" />
+                    <div className="w-10 h-10 bg-black dark:bg-white rounded-full flex items-center justify-center">
+                      <GraduationCap className="h-6 w-6 text-white dark:text-black" />
                     </div>
                   </div>
                   
                   <div className="flex-grow">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                      <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2 md:mb-0">
+                      <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2 md:mb-0">
                         {edu.degree}
                       </h3>
                       <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${
@@ -53,7 +55,7 @@ const Education: React.FC = () => {
                       </span>
                     </div>
                     
-                    <h4 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                    <h4 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-3">
                       {edu.institution}
                     </h4>
                     

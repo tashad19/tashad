@@ -96,75 +96,90 @@ export const softSkills = [
 export const projects = [
   {
     id: 1,
-    title: "EcoTrack - Sustainability App",
-    shortDescription: "A mobile app that helps users track their carbon footprint and suggests eco-friendly alternatives",
+    title: "VES - Virtual Experiment Sandbox",
+    shortDescription: "A web app that enables professors to create interactive experiments without coding. ",
     longDescription: "EcoTrack is a comprehensive sustainability application that empowers users to make environmentally conscious decisions. The app features real-time carbon footprint tracking, personalized eco-friendly recommendations, and a community platform for sharing green initiatives.",
-    techStack: ["React Native", "Node.js", "MongoDB", "Express"],
+    techStack: ["React.js", "Python", "Selenium", "Flask"],
     images: [
-      "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "https://images.pexels.com/photos/1181307/pexels-photo-1181307.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1181307/pexels-photo-1181307.jpeg?auto=compress&cs=tinysrgb&w=600"
     ],
-    githubUrl: "https://github.com/yourusername/ecotrack",
-    liveUrl: "https://ecotrack-demo.netlify.app",
+    githubUrl: "https://github.com/tashad19/VES",
+    liveUrl: "https://ves-pied.vercel.app/",
     problemSolved: "Addressed the lack of accessible tools for individuals to monitor and reduce their environmental impact",
     learnings: "Gained experience with mobile development, API integration, and creating intuitive UX for complex data visualization"
   },
   {
-    id: 2,
-    title: "StudyBuddy - Collaborative Learning Platform",
-    shortDescription: "A web platform connecting students for collaborative study sessions and knowledge sharing",
-    longDescription: "StudyBuddy revolutionizes the way students learn together by providing a digital space for forming study groups, sharing resources, and conducting virtual study sessions. Features include real-time collaboration tools, progress tracking, and AI-powered study recommendations.",
-    techStack: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
+    id: 3,
+    title: "Movie App - Discover your next favorite movie",
+    shortDescription: "A simple web application which lets you view popular movies and add them to your favorites.",
+    longDescription: "TaskFlow is a modern project management solution designed for agile teams. It features customizable Kanban boards, time tracking, team analytics, and seamless integration with popular development tools.",
+    techStack: ["React.js", "Express.js", "Node.js"],
     images: [
-      "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "https://images.pexels.com/photos/4009402/pexels-photo-4009402.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/4009402/pexels-photo-4009402.jpeg?auto=compress&cs=tinysrgb&w=600"
     ],
-    githubUrl: "https://github.com/yourusername/studybuddy",
-    liveUrl: "https://studybuddy-platform.vercel.app",
+    githubUrl: "https://github.com/tashad19/movie-app",
+    liveUrl: "https://movie-app-tashad.netlify.app/",
+    problemSolved: "Created an affordable alternative to expensive project management tools for small teams",
+    learnings: "Mastered full-stack development, database design, and implementing complex user authorization systems"
+  },
+  {
+    id: 2,
+    title: "FitTracker - Track your fitness goals",
+    shortDescription: "A web platform for monitoring workouts, setting targets, or tracking progress all in an intuitive and user-friendly experience.",
+    longDescription: "StudyBuddy revolutionizes the way students learn together by providing a digital space for forming study groups, sharing resources, and conducting virtual study sessions. Features include real-time collaboration tools, progress tracking, and AI-powered study recommendations.",
+    techStack: ["React.js", "Express.js", "MongoDB", "Node.js"],
+    images: [
+      "https://images.pexels.com/photos/2827392/pexels-photo-2827392.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/2827392/pexels-photo-2827392.jpeg?auto=compress&cs=tinysrgb&w=600"
+    ],
+    githubUrl: "https://github.com/tashad19/FitTracker",
+    liveUrl: "https://fit-tracker-ivory.vercel.app/",
     problemSolved: "Solved the challenge of remote collaborative learning during the pandemic",
     learnings: "Developed skills in real-time communication systems, user authentication, and responsive design principles"
   },
   {
-    id: 3,
-    title: "TaskFlow - Project Management Tool",
-    shortDescription: "An intuitive project management application with Kanban boards and team collaboration features",
-    longDescription: "TaskFlow is a modern project management solution designed for agile teams. It features customizable Kanban boards, time tracking, team analytics, and seamless integration with popular development tools.",
-    techStack: ["Next.js", "PostgreSQL", "Prisma", "NextAuth"],
+    id: 2,
+    title: "Flappy Bird Game Clone",
+    shortDescription: "It's a flappy bird game clone made using vanilla Javascript. Click to play!",
+    longDescription: "StudyBuddy revolutionizes the way students learn together by providing a digital space for forming study groups, sharing resources, and conducting virtual study sessions. Features include real-time collaboration tools, progress tracking, and AI-powered study recommendations.",
+    techStack: ["Javascript", "HTML", "CSS"],
     images: [
-      "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/474/827/datas/original.jpg",
+      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/474/827/datas/original.jpg"
     ],
-    githubUrl: "https://github.com/yourusername/taskflow",
-    liveUrl: "https://taskflow-pm.vercel.app",
-    problemSolved: "Created an affordable alternative to expensive project management tools for small teams",
-    learnings: "Mastered full-stack development, database design, and implementing complex user authorization systems"
+    githubUrl: "https://github.com/tashad19/Flappy-bird-clone",
+    liveUrl: "https://tashad19.github.io/Flappy-bird-clone/",
+    problemSolved: "Solved the challenge of remote collaborative learning during the pandemic",
+    learnings: "Developed skills in real-time communication systems, user authentication, and responsive design principles"
   }
 ];
 
 export const experiences = [
   {
     id: 1,
-    title: "Frontend Developer Intern",
-    company: "TechCorp Solutions",
-    period: "Jun 2023 - Aug 2023",
-    location: "San Francisco, CA",
-    description: "Developed responsive web applications using React and TypeScript. Collaborated with the design team to implement pixel-perfect UI components and improved website performance by 40%.",
+    title: "Smart Networks Intern - Data Science & Backend",
+    company: "SUN Mobility",
+    period: "May 2025 - Jun 2025",
+    location: "Bengaluru, India",
+    description: "Contributed to a data-driven battery fault prediction system as part of the Smart Networks team at Sun Mobility. Worked across data analytics, machine learning, and backend automation—transforming raw telematics data into actionable insights.",
     achievements: [
-      "Built 5 major feature components that increased user engagement by 25%",
-      "Optimized bundle size and loading times, resulting in 40% performance improvement",
-      "Collaborated with cross-functional teams of 8+ members using Agile methodologies"
+      "Performed EDA and fault analysis on battery telematics data",
+      "Built ML models to forecast battery faults based on historical patterns",
+      "Developed ETL pipelines to automate data uploads to Blob Storage, improving backend workflows"
     ],
-    techStack: ["React", "TypeScript", "Tailwind CSS", "Jest"]
+    techStack: ["Python", "Pandas", "NumPy", "scikit-learn", "PostgreSQL", "Azure Blob Storage"]
   },
   {
     id: 2,
-    title: "Full Stack Developer Intern",
-    company: "StartupXYZ",
-    period: "Dec 2022 - Feb 2023",
+    title: "MERN Full Stack Development Intern",
+    company: "Ethnus",
+    period: "Jun 2024 - Jul 2024",
     location: "Remote",
-    description: "Worked on both frontend and backend development for a SaaS platform. Implemented new features, fixed bugs, and contributed to the overall architecture decisions.",
+    description: "Developed a fitness tracker project using the MERN stack and Bootstrap for UI styling. Implemented features like user authentication and RESTful APIs to enhance user experience.",
     achievements: [
-      "Developed RESTful APIs serving 1000+ daily active users",
+      "Enhanced features for user tracking and analytics, resulting in a 30% optimization in performance.",
       "Implemented user authentication and authorization systems",
       "Reduced API response time by 30% through database optimization"
     ],
