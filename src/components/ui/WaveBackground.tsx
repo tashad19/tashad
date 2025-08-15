@@ -1,13 +1,21 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 
-const WaveBackground: React.FC = () => {
+const WaveBackground: React.FC<{ theme: 'light' | 'dark' }> = ({ theme }) => {
   const mountRef = useRef<HTMLDivElement>(null);
   const mouseRef = useRef({ x: 0, y: 0 });
   const sceneRef = useRef<THREE.Scene>();
   const rendererRef = useRef<THREE.WebGLRenderer>();
   const meshRef = useRef<THREE.Mesh>();
   const animationIdRef = useRef<number>();
+
+  useEffect(() => {
+    if (meshRef.current) {
+      (meshRef.current.material as THREE.MeshBasicMaterial).opacity =
+        theme === 'dark' ? 0.2 : 0.3;
+    }
+  }, [theme]);
+
 
   useEffect(() => {
     if (!mountRef.current) return;
@@ -36,16 +44,16 @@ const WaveBackground: React.FC = () => {
     mountRef.current.appendChild(renderer.domElement);
 
     // Create wave geometry
-    const geometry = new THREE.PlaneGeometry(20, 20, 100, 100);
+    const geometry = new THREE.PlaneGeometry(50, 50, 20, 20);
     const material = new THREE.MeshBasicMaterial({
       color: 0x4f46e5,
       wireframe: true,
       transparent: true,
-      opacity: 0.3
+      opacity: theme === 'dark' ? 0.2 : 0.3
     });
 
     const mesh = new THREE.Mesh(geometry, material);
-    mesh.rotation.x = -Math.PI / 3;
+    mesh.rotation.x = -Math.PI / 3.1;
     meshRef.current = mesh;
     scene.add(mesh);
 
@@ -67,7 +75,7 @@ const WaveBackground: React.FC = () => {
 
     // Animation loop
     const animate = () => {
-      const time = Date.now() * 0.001;
+      const time = Date.now() * 0.0005;
       const positions = geometry.attributes.position.array as Float32Array;
 
       // Create wave effect with mouse interaction
@@ -76,14 +84,14 @@ const WaveBackground: React.FC = () => {
         const y = originalPositions[i + 1];
         
         // Base wave animation
-        const wave1 = Math.sin(x * 0.5 + time) * 0.3;
-        const wave2 = Math.sin(y * 0.3 + time * 1.5) * 0.2;
+        const wave1 = Math.sin(x * 0.3 + time) * 0.15;
+        const wave2 = Math.sin(y * 0.7 + time * 1.5) * 0.1;
         
         // Mouse interaction effect
         const mouseX = mouseRef.current.x * 10;
         const mouseY = mouseRef.current.y * 10;
         const distance = Math.sqrt((x - mouseX) ** 2 + (y - mouseY) ** 2);
-        const mouseEffect = Math.max(0, 1 - distance / 5) * Math.sin(time * 3) * 2;
+        const mouseEffect = Math.max(0, 1 - distance / 5) * Math.sin(time * 3) * 0.3;
         
         positions[i + 2] = wave1 + wave2 + mouseEffect;
       }
@@ -92,7 +100,7 @@ const WaveBackground: React.FC = () => {
       
       // Rotate the mesh slightly
       if (meshRef.current) {
-        meshRef.current.rotation.z = time * 0.1;
+        meshRef.current.rotation.z = time * 0.04;
       }
 
       renderer.render(scene, camera);

@@ -6,7 +6,7 @@ import { experiences } from '../../utils/data';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-20 px-6 bg-gray-50 dark:bg-gray-900">
+    <section id="experience" className="py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
