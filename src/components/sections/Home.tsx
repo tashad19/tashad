@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Download, ArrowRight } from 'lucide-react';
 import Button from '../ui/Button';
-import FloatingIcons from '../ui/FloatingIcons';
 import { personalInfo } from '../../utils/data';
 
 const Home: React.FC = () => {
@@ -25,13 +24,57 @@ const Home: React.FC = () => {
             className="flex justify-center lg:justify-end"
           >
             <div className="relative">
-              <FloatingIcons />
-              <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-black dark:border-white">
+              {/* Animated Ring Effects */}
+              <div className="absolute inset-0 rounded-full">
+                <motion.div
+                  className="absolute inset-0 rounded-full border-4 border-blue-500/30"
+                  animate={{
+                    scale: [1, 1.1, 1],
+                    opacity: [0.3, 0.6, 0.3],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                <motion.div
+                  className="absolute inset-0 rounded-full border-4 border-purple-500/30"
+                  animate={{
+                    scale: [1.1, 1.2, 1.1],
+                    opacity: [0.2, 0.5, 0.2],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 1
+                  }}
+                />
+                <motion.div
+                  className="absolute inset-0 rounded-full border-4 border-indigo-500/30"
+                  animate={{
+                    scale: [1.2, 1.3, 1.2],
+                    opacity: [0.1, 0.4, 0.1],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 2
+                  }}
+                />
+              </div>
+              
+              <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-black dark:border-white shadow-2xl">
                 <img
                   src={personalInfo.photo}
                   alt={personalInfo.name}
                   className="w-full h-full object-cover"
                 />
+                
+                {/* Gradient overlay for extra depth */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-white/10 dark:to-black/10" />
               </div>
             </div>
           </motion.div>
