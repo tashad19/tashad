@@ -1,5 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
+import WaveBackground from './components/ui/WaveBackground';
 import Header from './components/Header';
 import Home from './components/sections/Home';
 import Achievements from './components/sections/Achievements';
@@ -13,6 +14,7 @@ function App() {
   return (
     <ThemeProvider>
       <div className="relative min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+        <WaveBackground />
         <Header />
         <main className='relative z-10'>
           

@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Download, ArrowRight } from 'lucide-react';
 import Button from '../ui/Button';
+import FloatingIcons from '../ui/FloatingIcons';
 import { personalInfo } from '../../utils/data';
 
 const Home: React.FC = () => {
@@ -24,6 +25,7 @@ const Home: React.FC = () => {
             className="flex justify-center lg:justify-end"
           >
             <div className="relative">
+              <FloatingIcons />
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-black dark:border-white">
                 <img
                   src={personalInfo.photo}
