@@ -146,7 +146,7 @@ const Contact: React.FC = () => {
                     whileTap={{ scale: 0.95 }}
                     className="flex items-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
                   >
-                    <div className="w-8 h-8 bg-black dark:bg-white rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
+                    <div className="w-8 h-8 invert dark:invert-0 bg-white rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
                       {getSocialIcon(social.icon)}
                       <span className="text-white dark:text-black text-xs">
                         {/* Icon rendered above */}
@@ -176,7 +176,7 @@ const Contact: React.FC = () => {
                     whileTap={{ scale: 0.95 }}
                     className="flex items-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
                   >
-                    <div className="w-8 h-8 bg-black dark:bg-white rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
+                    <div className="w-8 h-8 invert dark:invert-0 bg-white rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
                       {getSocialIcon(social.icon)}
                       <span className="text-white dark:text-black text-xs">
                         {/* Icon rendered above */}
