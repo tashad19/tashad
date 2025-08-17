@@ -4,6 +4,7 @@ import { Send, Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-rea
 import Card from '../ui/Card';
 import Button from '../ui/Button';
 import { personalInfo, socialLinks, codingLinks } from '../../utils/data';
+import emailjs from "emailjs-com";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -13,8 +14,22 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:${personalInfo.email}?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(formData.message)}`;
-    window.location.href = mailtoLink;
+
+    emailjs.send(
+      "service_cqyigfd",
+      "template_s2lq9lq",
+      {
+        subject: formData.subject,
+        message: formData.message,
+      },
+      "IcKuCAma77H1kg8i2"
+    ).then(() => {
+      alert("Message sent!");
+      setFormData({ subject: "", message: "" });
+    }).catch((err) => {
+      console.error(err);
+      alert("Failed to send message.");
+    });
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
