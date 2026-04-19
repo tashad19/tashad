@@ -183,7 +183,7 @@ export const experiences = [
     title: "3D Developer Intern",
     company: "Evobi Automations",
     period: "Jan 2026 - Present",
-    location: "Bengaluru, India",
+    location: "Bengaluru, India", 
     description:
       "Worked on debugging and enhancing an LMS platform, focusing on backend reliability, API consistency, and frontend state management. Also contributed to building interactive 3D-driven educational systems.",
     achievements: [
